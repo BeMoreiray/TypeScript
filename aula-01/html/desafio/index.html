@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <script>
+        function executar(){
+            var n1 = document.getElementById('n1').value;
+            var n2 = document.getElementById('n2').value;
+            var n3 = document.getElementById('n3').value;
+
+            var total = mult(parseInt(n1), parseInt(n2), parseInt(n3));
+
+            alert(total);
+        }
+    </script>
+</head>
+<body>
+    <h1>Multiplique os números</h1>
+   
+   
+     <input type="text" name="n1" id="n1">
+     <br>
+     <input type="text" name="n2" id="n2">
+     <br>
+     <input type="text" name="n3" id="n3">
+     <br> <br>
+    <button  onclick="executar()">Multiplicar</button>
+    <script src = "../../dist/desafio/appDesafio.js"></script>
+</body>
+</html>
