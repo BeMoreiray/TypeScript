@@ -1,4 +1,4 @@
-class Laptop{
+ class Laptop{
     tela : number;
 
     //toda classe possui um construtor.
@@ -33,10 +33,22 @@ class Lenovo extends Laptop implements Gamer{
 }
 
 let pc = new Lenovo();
+
 pc.aumentarBrilho(3);
 pc.tamanhoMemoria();
 
 interface Gamer {
     memoriaVideo: number;
+}
+
+class Samsung extends Laptop implements Gamer{
+    memoriaVideo: number = 512;
+
+    constructor(){
+        super(21);
+    }
+    aumentarBrilho(valor : number){
+        console.log(`Brilho subiu ${valor} pontos`)
+    }
 }
 
