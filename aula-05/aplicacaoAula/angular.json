@@ -3,17 +3,17 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "aplicacao": {
+    "aplicacaoAula": {
       "projectType": "application",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "aply",
+      "prefix": "bia",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/aplicacao",
+            "outputPath": "dist/aplicacao-aula",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "aplicacao:build:production"
+              "browserTarget": "aplicacaoAula:build:production"
             },
             "development": {
-              "browserTarget": "aplicacao:build:development"
+              "browserTarget": "aplicacaoAula:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "aplicacao:build"
+            "browserTarget": "aplicacaoAula:build"
           }
         },
         "test": {
