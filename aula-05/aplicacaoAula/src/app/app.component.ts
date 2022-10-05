@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Estudante } from './estudante/estudante.model';
 
 @Component({
   selector: 'bia-root',
@@ -6,6 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  alunos = {nome: 'João Silva', aprovado: true};
-  
+  estudantes: Estudante[] =[
+
+    {nome: 'Ana Clara', aprovado: true, escola: 'Senac'},
+    {nome: 'Arian Weslley', aprovado: false, escola: 'Senac'},
+    {nome: 'Nicolas', aprovado: true}
+]
+
 }

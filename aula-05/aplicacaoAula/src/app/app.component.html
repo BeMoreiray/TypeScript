@@ -1,10 +1,6 @@
 
 <bia-cabecalho></bia-cabecalho>
-{{alunos.nome}}
-<div [class.light] = "alunos.aprovado" [hidden] = "!alunos.aprovado">
-   O aluno está APROVADO!
-</div>
+<bia-estudante *ngFor ='let estudante of estudantes' [estudante] ="estudante"></bia-estudante>
 
- <!--<div  [hidden] = "aprovado">
-  O aluno está REPROVADO!
-</div>-->
+
+
