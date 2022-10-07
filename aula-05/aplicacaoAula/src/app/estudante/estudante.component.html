@@ -1,14 +1,16 @@
 <div *ngIf = '!estudante.aprovado'>
-{{estudante.nome}} 
+<a href="#" (click)="exibir()">{{estudante.nome}}</a> 
 </div>
 
 <div *ngIf= 'estudante.aprovado'>
-    {{estudante.nome}} 
+    <a href="#" (click)="exibir()">{{estudante.nome}}</a> 
 </div>
 <div *ngIf='estudante.aprovado' [class.light] = "estudante.aprovado" >
-   O aluno está APROVADO!
+   O aluno está APROVADO! <button (click)="descricao.focus()">Foco!</button><br> 
+   <textarea #descricao></textarea>
 </div> 
 <div *ngIf='!estudante.aprovado' [class.red] = "!estudante.aprovado" >
-    O aluno está REPROVADO!
+    O aluno está REPROVADO!<button (click)="descricao2.focus()">Foco!</button><br> <!--Quando você classifica a caixa de texto por um id da pra fazer e usa o focus com o evento click você coloca o cursor na caixa de t-->
+    <textarea #descricao2></textarea>
  </div> 
  
