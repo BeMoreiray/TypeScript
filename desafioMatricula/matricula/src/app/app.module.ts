@@ -7,20 +7,27 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { RouterModule} from '@angular/router';
 import { ROUTES} from './app.routes';
+import { MatriculasComponent } from './matriculas/matriculas.component';
+import { AlunosComponent } from './matriculas/alunos/alunos.component';
+import { MatriculasService } from './matriculas/matriculas.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RodapeComponent,
-    CabecalhoComponent
+    CabecalhoComponent,
+    MatriculasComponent,
+    AlunosComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    HttpClientModule
    
   ],
-  providers: [],
+  providers: [MatriculasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,42 @@
+{
+    "alunos":[
+             {
+                 "id": 1,
+                 "nomeCompleto": "Beatriz Moreira Silva",
+                    "cel": "21 90000-000",
+                    "ano": "3° ano",
+                    "turma": "E01",
+                    "matricula": "2211171",
+                   "senha": "12345677"
+                                
+             },
+             {
+                 "id": 2,
+                 "nomeCompleto": "Arian Weslley",
+                    "cel": "21 90000-000",
+                    "ano": "1° ano",
+                    "turma": "A10",
+                    "matricula": "2211172",
+                   "senha": "1234567"
+             },
+             {
+                 "id": 3,
+                 "nomeCompleto": "Henrique Padilha",
+                    "cel": "21 90000-000",
+                    "ano": "2° ano",
+                    "turma": "D03",
+                    "matricula": "2211173",
+                   "senha": "1234567"
+             }, 
+             {
+                 "id": 4,
+                 "nomeCompleto": "Danilo Silva",
+                    "cel": "21 90000-000",
+                    "ano": "3° ano",
+                    "turma": "B05",
+                    "matricula": "2211174",
+                   "senha": "1234567"
+             }
+ 
+         ]
+ }    
