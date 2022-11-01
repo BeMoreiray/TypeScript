@@ -1,25 +1,54 @@
 {
-   "categorias":[
-            {
-                "id": 1,
-                "titulo": "Terror",
-                "imagePath": "../../assets/img/terror.png"
-            },
-            {
-                "id": 2,
-                "titulo": "Aventura",
-                "imagePath": "../../assets/img/climbing.png"
-            },
-            {
-                "id": 3,
-                "titulo": "Romance",
-                "imagePath": "../../assets/img/romance.png"
-            }, 
-            {
-                "id": 4,
-                "titulo": "Comédia",
-                "imagePath": "../../assets/img/comedia.png"
-            }
+    "categorias": [
+        {
+            "id": 1,
+            "titulo": "Terror",
+            "imagePath": "../../assets/images/dracula.png"
+        },
+        {
+            "id": 2,
+            "titulo": "Aventura",
+            "imagePath": "../../assets/images/climbing.png"
+        },
+        {
+            "id": 3,
+            "titulo": "Romance",
+            "imagePath": "../../assets/images/romance.png"
+        },
+        {
+            "id": 5,
+            "titulo": "Heróis",
+            "imagePath": "../../assets/images/superhero.png"
+        }
+    ],
+    "filmes": [
+        {
+            "id": 1,
+            "descricao": "Rogai por nós",
+            "duracao": "1h 39m",
+            "ano": "2021",
+            "indicacao": "14 anos",
+            "imagePath": "../../assets/images/movies/rogai.jpg",
+            "categoriaId": 1
+        },
+        {
+            "id": 2,
+            "descricao": "Vingadores. Ultimato!",
+            "duracao": "3h 10m",
+            "ano": "2019",
+            "indicacao": "14 anos",
+            "imagePath": "../../assets/images/movies/vingadores.jpg",
+            "categoriaId": 5
+        },
+        {
+            "id": 3,
+            "descricao": "O Homem Invísivel",
+            "duracao": "2h 10m",
+            "ano": "2020",
+            "indicacao": "14 anos",
+            "imagePath": "../../assets/images/movies/invisivel.jpg",
+            "categoriaId": 1
+        }
 
-        ]
-}    
+    ]
+}

@@ -4,8 +4,7 @@ import { CategoriasService } from './categorias.service';
 
 @Component({
   selector: 'cin-categorias',
-  templateUrl: './categorias.component.html',
-  styleUrls: ['./categorias.component.css']
+  templateUrl: './categorias.component.html'
 })
 export class CategoriasComponent implements OnInit {
   categorias!: Categoria[];
@@ -13,10 +12,8 @@ export class CategoriasComponent implements OnInit {
   constructor(private categoriaService: CategoriasService) { }
 
   ngOnInit(): void {
-     this.categoriaService.listarCategorias().subscribe(categorias => this.categorias= categorias);
+    this.categoriaService.listarCategorias()
+                         .subscribe(categorias => this.categorias = categorias);
   }
 
 }
-
-
-

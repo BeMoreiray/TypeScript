@@ -1,15 +1,7 @@
-
-
-
-<div  class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <div class="card mb-4 shadow-sm  ">
-        <div class="card-header">
-            <h4 class="my-0 font-weight-normal">{{categoria.titulo}}</h4>
-        </div>
-        <div class="card-body">
-            <img class="margin-b" [src]="categoria.imagePath" width="100px">
-            <a href="filmes.html" style="text-decoration: none;"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Exibir</button></a>
-        </div>
-    </div>
+<div class="card-header">
+    <h4 class="my-0 font-weight-normal">{{categoria.titulo}}</h4>
 </div>
-
+<div class="card-body">
+    <img class="margin-b" [src]="categoria.imagePath" width="100px">
+    <a [routerLink]="['/filmes', categoria.id]" style="text-decoration: none;"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Exibir</button></a>
+</div>

@@ -1,6 +1,5 @@
-export interface Categoria{
-    
+export interface Categoria {
     id: number;
-    titulo: string;
+    titulo: string
     imagePath: string
 }
